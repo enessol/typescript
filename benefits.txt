@@ -1,0 +1,23 @@
+BENEFITS OF TYPESCRIPT
+
+TS IS A PROGRAMMING LANGUAGE BUILT ON TOP OF JS WITH TYPES
+
+PEKİ BU HAYATIMI ZORLAŞTIRMAYACAK MI DAHA DA, NEDEN TİP SEÇMEK ZORUNDA BIRAKIYOR BENİ DİYEBİLİRSİNİZ
+BETTER ERROR FEEDBACK, TİPİ BİLİRSE DAHA NET HATALAR DÖNER
+BETTER AUTOCOMPLETION AND HINTS
+CUSTOM TYPES
+
+İLK BAŞTA GEREKSİZ ve KISITLAYICI GÖRÜLEBİLSE DE GELİŞTİRDİĞİNİZ PROJELER KARMAŞIKLAŞTIKÇA TS SİZİN İÇİN DAHA DA ÖNEM KAZANIYOR
+
+ASLINDA JAVASCRIPTIN TİPLERLE GENİŞLETİLMİŞ HALİ
+
+TYPESCRIPT JAVASCRIPTE ÇEVRİLİR
+
+npm install -g typescript
+
+tsc filename > creates js file with typescript compiler
+node filename > runs that file 
+sürekli bunları yapmak yerine ts.config dosyasından yapabiliriz.
+tsc --init yeni tsconfig.json dosyası oluşturur
+tsc --watch otomatik yapar
+note --watch (path) automatically runs, need at least node js 18.11
