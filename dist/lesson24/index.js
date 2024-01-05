@@ -5,7 +5,7 @@ const fs_1 = require("fs");
 class CSVWriter {
     constructor(columns) {
         this.columns = columns;
-        this.csv = this.columns.join(",") + "\n";
+        this.csv = this.columns.join(";") + "\n";
     }
     save(fileName) {
         (0, fs_1.appendFileSync)(fileName, this.csv);
@@ -18,7 +18,7 @@ class CSVWriter {
         console.log(this.csv);
     }
     formatRow(p) {
-        return this.columns.map((col) => p[col]).join(",");
+        return this.columns.map((col) => p[col]).join(";");
     }
 }
 const writer = new CSVWriter(["id", "amount", "to", "notes"]);
@@ -26,4 +26,4 @@ writer.addRows([
     { id: 1, amount: 50, to: "Enes", notes: "you better pay me" },
     { id: 2, amount: 150, to: "Mete", notes: "what the dog doing?" },
 ]);
-// writer.save("./data/payments.csv");
+writer.save("./data/payments2.csv");

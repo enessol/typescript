@@ -12,7 +12,7 @@ type PaymentColumns = ("id" | "amount" | "to" | "notes")[];
 
 class CSVWriter {
   constructor(private columns: PaymentColumns) {
-    this.csv = this.columns.join(",") + "\n";
+    this.csv = this.columns.join(";") + "\n";
   }
   private csv: string;
 
@@ -30,7 +30,7 @@ class CSVWriter {
   }
 
   private formatRow(p: Payment): string {
-    return this.columns.map((col) => p[col]).join(",");
+    return this.columns.map((col) => p[col]).join(";");
   }
 }
 
@@ -40,4 +40,4 @@ writer.addRows([
   { id: 2, amount: 150, to: "Mete", notes: "what the dog doing?" },
 ]);
 
-// writer.save("./data/payments.csv");
+writer.save("./data/payments2.csv");
