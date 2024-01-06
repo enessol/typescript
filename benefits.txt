@@ -20,4 +20,7 @@ node filename > runs that file
 sürekli bunları yapmak yerine ts.config dosyasından yapabiliriz.
 tsc --init yeni tsconfig.json dosyası oluşturur
 tsc --watch otomatik yapar
-note --watch (path) automatically runs, need at least node js 18.11
+node --watch (path) automatically runs, need at least node js 18.11
+node --watch dist/lesson8/index.js
+npm install -g json-server to install install json
+json-server --watch db.json to watch our db

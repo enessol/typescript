@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.10.6"
+    "@types/node": "^20.10.6",
+    "parcel": "^2.11.0"
   }
 }
